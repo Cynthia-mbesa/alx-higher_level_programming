@@ -14,3 +14,6 @@
 
 5-variable_load.py - program that imports the variable a from 
 	the file variable_load_5.py and prints its value
+
+100-my_calculator.py - program that imports all functions from the 
+	file calculator_1.py and handles basic operations
