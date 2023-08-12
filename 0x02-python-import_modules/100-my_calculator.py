@@ -17,7 +17,7 @@ if __name__ == "__main__":
     elif argv[2] == '/':
         func = div
     else:
-        print("Unknown operator. Available operators: +, -, *, and /")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
     result = func(int(argv[1]), int(argv[3]))
