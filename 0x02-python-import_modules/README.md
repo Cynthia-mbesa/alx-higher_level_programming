@@ -17,3 +17,7 @@
 
 100-my_calculator.py - program that imports all functions from the 
 	file calculator_1.py and handles basic operations
+
+101-easy_print.py - program that prints #pythoniscool, followed by a new line, 
+	in the standard output.not allowed to use print or eval or open or 
+	import sys in your file 101-easy_print.py. program should be maximum 2 lines long
