@@ -14,39 +14,38 @@ class Rectangle:
         TypeError: width or height not integer
         ValueError: wwidth or height < 0
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
-        @property
-        def width(self):
-            """get width of rectangle"""
-            return self.__width
+    @property
+    def width(self):
+        """get width of rectangle"""
+        return self.__width
 
-        @width.setter
-        def width(self, value):
-            """set width
+    @width.setter
+    def width(self, value):
+        """set width
+        Args: value(int):width value
+        """
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
-            Args: value(int):width value
-            """
-            if not isinstance(value, int):
-                raise TypeError("width must be an integer")
-            if value < 0:
-                raise ValueError("width must be >= 0")
-            self.__width = value
+    @property
+    def height(self):
+        """get height"""
+        return self.__height
 
-        @property
-        def height(self):
-            """get height"""
-            return self.__height
+    @height.setter
+    def height(self, value):
+        """set height value
 
-        @height.setter
-        def height(self, value):
-            """set height value
-
-            Args: value(int): height value
-            """
-            if not isinstance(value, int):
-                raise TypeError("height must be an integer")
-            if value < 0:
-                raise ValueError("height must be >= 0")
-            self.__height = value
+        Args: value(int): height value
+        """
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
