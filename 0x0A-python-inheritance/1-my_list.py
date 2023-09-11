@@ -4,6 +4,8 @@
 
 class MyList(list):
     """the class defined by the module"""
+    pass
+
     def print_sorted(self):
         """prints the list, but sorted (ascending sort)"""
-        print(sorted(self))
+        print(sorted(list(self)))
