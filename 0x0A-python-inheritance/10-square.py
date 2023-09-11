@@ -47,4 +47,4 @@ class Square(Rectangle):
         super().__init__(size, size)
 
     def __str__(self):
-        return f"[Square] {self._Rectangle__width}/{self._Rectangle__height}"
+        return f"[Rectangle] {self._Rectangle__width}/{self._Rectangle__height}"
