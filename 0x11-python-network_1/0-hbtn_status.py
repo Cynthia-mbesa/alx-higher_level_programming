@@ -4,7 +4,9 @@ from urllib.request import Request, urlopen
 
 
 if __name__ == "__main__":
-    req = Request(url='https://intranet.hbtn.io/status', headers={'User-Agent': 'Mozilla/6.0'})
+    req = Request(
+            url='https://intranet.hbtn.io/status',
+            headers={'User-Agent': 'Mozilla/6.0'})
     with urlopen(req) as response:
         body = response.read()
         print("Body response:")
